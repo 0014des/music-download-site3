@@ -18,11 +18,31 @@
     <div class="card">
       <img src="https://via.placeholder.com/300x200.png?text=ダウンロード" alt="ダウンロード">
       <h2>「今、伝えたいこと。 [music]」</h2>
-      <a class="download-button" href="今、伝えたいこと。 [music].mp3" download>ダウンロードする</a>
+
+      <audio controls>
+        <source src="今、伝えたいこと。 [music].mp3" type="audio/mpeg">
+      </audio>
+
+      <a class="download-button" href="今、伝えたいこと。 [music].mp3" download>
+        <img src="icon-download.png" alt="">ダウンロードする
+      </a>
+
+      <div class="timer">
+        <img src="icon-timer.png" alt="">ダウンロード期限 <span id="counter">10</span>秒
+      </div>
+
     </div>
   </div>
 
+  <section class="more">
+    <h2>もっと見る</h2>
+    <p>ここに関連情報もしくは他のダウンロードも整理して下さい✨</p>
+    <!-- ここに他のカードも複数配置して1スクロール分にして下さい -->
+  </section>
+
   <footer>© 2025 Your Name</footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
