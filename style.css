@@ -4,6 +4,15 @@ body {
   font-family:'Roboto Slab', serif;
   color: #fff;
   background: #1e1e1e;
+  background: linear-gradient(-45deg, #ff7675, #ffcc5b, #ff9f5b, #ff7675);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 h1 {
@@ -37,6 +46,7 @@ p {
   transform: translateY(0);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   text-align: center;
+  position: relative;
 }
 
 .card:hover {
@@ -55,6 +65,11 @@ p {
   font-size: 1.5em;
 }
 
+.card audio {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .download-button {
   padding: 15px 30px;
   background: #ffcc5b;
@@ -65,6 +80,14 @@ p {
   border-radius: 30px;
   box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
   transition: background 0.3s ease, transform 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-button img {
+  width: 20px;
+  height: 20px;
 }
 
 .download-button:hover {
@@ -73,6 +96,38 @@ p {
   box-shadow: 0 10px 20px rgb(0 0 0 / 0.7);
 }
 
+.timer {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1em;
+  background: #ff7675;
+  padding: 10px 20px;
+  border-radius: 30px;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.timer img {
+  width: 20px;
+  height: 20px;
+}
+
+.more {
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.more h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.more p {
+  font-size: 1.5em;
+}
+  
 footer {
   margin-top: 50px;
   text-align: center;
