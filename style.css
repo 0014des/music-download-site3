@@ -4,7 +4,7 @@ body {
   font-family:'Roboto Slab', serif;
   color: #fff;
   background: #1e1e1e;
-  background: linear-gradient(-45deg, #ff7675, #ffcc5b, #ff9f5b, #ff7675);
+  background: linear-gradient(-45deg, #aefeff, #79d5ff, #4cbfff, #79d5ff);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 }
@@ -18,7 +18,7 @@ body {
 h1 {
   margin-bottom: 30px;
   font-size: 4em;
-  color: #ffcc5b;
+  color: #fff;
   text-shadow: 4px 4px 10px #000;
   text-align: center;
 }
@@ -72,8 +72,8 @@ p {
 
 .download-button {
   padding: 15px 30px;
-  background: #ffcc5b;
-  color: #000;
+  background: #79d5ff;
+  color: #fff;
   font-size: 1.1em;
   font-weight: bold;
   text-decoration: none;
@@ -91,7 +91,7 @@ p {
 }
 
 .download-button:hover {
-  background: #ffa500;
+  background: #4cbfff;
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgb(0 0 0 / 0.7);
 }
@@ -100,7 +100,7 @@ p {
   margin-bottom: 20px;
   color: #fff;
   font-size: 1em;
-  background: #ff7675;
+  background: #79d5ff;
   padding: 10px 20px;
   border-radius: 30px;
   align-items: center;
