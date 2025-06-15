@@ -3,23 +3,14 @@ body {
   padding: 0;
   font-family:'Roboto Slab', serif;
   color: #fff;
-  background: linear-gradient(-45deg, #ffcc5b, #ff7675, #ff9f5b, #ff7675);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  background: #1e1e1e;
 }
 
 h1 {
   margin-bottom: 30px;
   font-size: 4em;
-  color: #fff;
-  text-shadow: 3px 3px 6px #000;
+  color: #ffcc5b;
+  text-shadow: 4px 4px 10px #000;
   text-align: center;
 }
 
@@ -29,22 +20,34 @@ p {
   font-size: 1.5em;
 }
 
+.grid {
+  padding: 50px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
 .card {
-  width: 300px;
-  margin: 0 auto 30px;
-  padding: 30px;
+  padding: 20px;
   background: #fff;
   color: #000;
   border-radius: 20px;
-  box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
-  text-align: center;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.7);
   transform: translateY(0);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 30px rgb(0 0 0 / 0.7);
+  box-shadow: 0 20px 30px rgb(0 0 0 / 0.9);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
 }
 
 .card h2 {
